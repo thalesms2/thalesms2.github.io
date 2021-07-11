@@ -1,10 +1,22 @@
 .scroller {
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
-    
+    scroll-behavior: smooth;
 }
 
 .scroller .section {
     height: 100vh;
     scroll-snap-align: center;
+}
+
+.scroller::-webkit-scrollbar {
+    width: 0.30rem;
+}
+  
+.scroller::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+  
+.scroller::-webkit-scrollbar-thumb {
+    background: white;
 }

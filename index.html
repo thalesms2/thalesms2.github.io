@@ -10,16 +10,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/scroller.css">
-    <link rel="stylesheet" href="style/title.css">
+    <link rel="stylesheet" href="style/home.css">
     <link rel="stylesheet" href="style/about.css">
     <link rel="stylesheet" href="style/header.css">
-    <link rel="stylesheet" href="style/btn-ham.css">
+    <link rel="stylesheet" href="style/menu-btn.css">
     <title>Thales Sato</title>
 </head>
 <body>
-    <div class="scroller">
-        <div class="menu-btn">
-            <div class="menu-btn__burger"></div>
+    <div class="scroller"> 
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <a href="#about">
+                    <li>Sobre</li>
+                </a>
+                <a href="#competence">
+                    <li>Competencias</li>
+                </a>
+                <a href="#">
+                    <li>Info</li>
+                </a>
+                <a href="#">
+                    <li>Contact</li>
+                </a>
+                <a href="https://erikterwan.com/" target="_blank">
+                    <li>Show me more</li>
+                </a>
+            </ul>
         </div>
         
         <div class="header">
@@ -35,6 +55,7 @@
               <li><a href="#contact">Contato</a></li>
             </ul>
         </div>
+
         <div class="section" id="home">
             <div>
                 <h1>THALES M. SATO</h1>
@@ -52,7 +73,6 @@
                     infelizmente fui obrigado a pausar a graduação mas a mesmo continua como um objetivo em minha vida.
                     Em meus cargos mais recentes trabalhei como suporte técnico, o que foi muito importante para obter a visão mais aguçada
                     sobre o usuário e refinar meu raciocínio lógico tanto quanto aprender muito sobre todas as engrenagens de uma empresa grande.
-                    
                     Como hobbie eu sempre estou ansioso para aprender novas coisas, então me aventuro em desenho, design gráfico, animação, VFX, stream e principalmente
                     jogar competitivamente, apesar de não ser de alto nível heheh.
                 </p>
@@ -287,7 +307,5 @@
             (insira bgl d email ak)
         </div>
     </div>
-
-    <script src="script/btn-ham.js"></script>
 </body>
 </html>
