@@ -1,0 +1,41 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+  
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background: #6649b8;
+}
+
+body {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    background-color: #272727;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.section {
+    padding: 8vmin;
+}

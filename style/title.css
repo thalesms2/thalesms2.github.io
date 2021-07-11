@@ -1,0 +1,17 @@
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h1 + p {
+    text-align: end;
+    font-size: 2em;
+    font-weight: 800;
+    font-family: monospace;
+    line-height: 0em;
+}

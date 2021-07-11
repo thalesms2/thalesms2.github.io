@@ -1,0 +1,10 @@
+.scroller {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    
+}
+
+.scroller .section {
+    height: 100vh;
+    scroll-snap-align: center;
+}
