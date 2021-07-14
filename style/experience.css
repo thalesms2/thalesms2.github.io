@@ -1,0 +1,13 @@
+#experience .wrapper {
+    width: 33vw;
+}
+
+.company, .job + .time, .role {
+    display: block;
+}
+
+.wrapper-education .name,
+.wrapper-education .class,
+.wrapper-education .time {
+    display: block;
+}

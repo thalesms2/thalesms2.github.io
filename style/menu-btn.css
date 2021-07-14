@@ -1,11 +1,11 @@
-@media screen and (max-width: 1330px){
+/* @media screen and (max-width: 1330px){
     .header {
         display: none;
-    }
+    } */
 
     #menuToggle {
     display: block;
-    position: relative;
+    position: fixed;
     top: 50px;
     left: 50px;
     z-index: 1;
@@ -94,11 +94,12 @@
     */
     #menu {
     position: absolute;
-    width: 300px;
+    width: 18vw;
+    height: 100vh;
     margin: -100px 0 0 -50px;
     padding: 50px;
     padding-top: 125px;
-    background: #ededed;
+    background: #808080;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
@@ -118,4 +119,3 @@
     #menuToggle input:checked ~ ul {
     transform: none;
     }
-}

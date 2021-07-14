@@ -1,12 +1,14 @@
 .content p {
+    /* font-size: clamp(0.5rem, 1vw ,1.2rem); */
     font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
 }
-.content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.img {
+    margin-right: 40px;
+    
+}
+
+.img img {
+    border-radius: 8px;
+    height: 45vh;
 }

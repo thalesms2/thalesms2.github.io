@@ -9,303 +9,383 @@
     <link rel="manifest" href="img/site.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/scroller.css">
     <link rel="stylesheet" href="style/home.css">
     <link rel="stylesheet" href="style/about.css">
-    <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/menu-btn.css">
-    <title>Thales Sato</title>
+    <link rel="stylesheet" href="style/competence.css">
+    <link rel="stylesheet" href="style/experience.css">
+
+    <title>Thales M. Sato</title>
 </head>
 <body>
-    <div class="scroller"> 
-        <div id="menuToggle">
-            <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul id="menu">
-                <a href="#about">
-                    <li>Sobre</li>
-                </a>
-                <a href="#competence">
-                    <li>Competencias</li>
-                </a>
-                <a href="#">
-                    <li>Info</li>
-                </a>
-                <a href="#">
-                    <li>Contact</li>
-                </a>
-                <a href="https://erikterwan.com/" target="_blank">
-                    <li>Show me more</li>
-                </a>
-            </ul>
-        </div>
-        
-        <div class="header">
-            <ul>
-              <li><a href="#about">Sobre</a></li>
-              <li><a href="#competence">Competencias</a></li>
-              <li><a href="#experience">Experiências</a></li>
-              <li><a href="#education">Educação</a></li>
-              <li><a href="#class">Cursos</a></li>
-              <li><a href="#hobbies">Hobbies</a></li>
-              <li><a href="#interests">Interesses</a></li>
-              <li><a href="#social">Social</a></li>
-              <li><a href="#contact">Contato</a></li>
-            </ul>
-        </div>
+    <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+            <a href="#about">
+                <li>Sobre</li>
+            </a>
+            <a href="#competence">
+                <li>Competencias</li>
+            </a>
+            <a href="#experience">
+                <li>Experiência</li>
+            </a>
+            <a href="#education">
+                <li>Educação</li>
+            </a>
+            <a href="#class">
+                <li>Cursos</li>
+            </a>
+            <a href="#languanges">
+                <li>Idiomas</li>
+            </a>
+            <a href="#hobbies">
+                <li>Hobbies</li>
+            </a>
+            <a href="#interests">
+                <li>Interesses</li>
+            </a>
+            <a href="#contact">
+                <li>Contato</li>
+            </a>
+        </ul>
+    </div>
 
-        <div class="section" id="home">
-            <div>
-                <h1>THALES M. SATO</h1>
-                <p>Desenvolvedor front-end</p>
+    <div class="section" id="home">
+        <div>
+            <h1>THALES M. SATO</h1>
+            <p class="font-700">Desenvolvedor front-end</p>
+            <a href="#about">
+                <span class="font-700">↓</span>
+            </a>
+        </div>
+    </div>
+    
+    <div class="section" id="about">
+        <h2>Sobre</h2>
+        <div class="content">
+            <div class="img">
+                <img src="img/20190922_170138.jpg" alt="praia-costas" class="imgAbout">
+            </div>
+            <p>
+                Meu nome é Thales, mas pode me chamar de Japa ou Sato, o que for mais confortável. <br /> <br />
+                Tenho 21 anos e me apaixonei por tecnologia na infância e sempre tive curiosidade de entender a fundo como tudo funciona, <br />
+                esse foi um dos motivos de ingressar no bacharelado de engenharia de computação,
+                infelizmente fui obrigado a pausar a graduação mas ainda é um objetivo em minha vida.<br /><br />
+                Em meus cargos mais recentes trabalhei como suporte técnico, o que foi muito importante para obter a visão mais aguçada
+                sobre o usuário e refinar meu raciocínio lógico tanto quanto aprender muito sobre todas as engrenagens de uma grande empresa.
+                Como hobbie eu sempre estou ansioso para aprender novas coisas, então me aventuro em desenho, design gráfico, animação, VFX, stream e principalmente
+                jogar competitivamente, apesar de não ser de alto nível heheh.
+            </p>
+        </div>
+    </div>
+    
+    <div class="section" id="competence">
+        <h2>Competencias</h2>
+        <div class="content">
+            <ul>
+                <li> 
+                    <div class="name font-700">HTML</div>
+                    <div class="progress">
+                        <div class="percentage" style="width:90%">
+                            <div class="percent">90%</div> 
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="name font-700">CSS</div>
+                    <div class="progress">
+                        <div class="percentage" style="width:50%">
+                            <div class="percent">50%</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="name font-700">JavaScript</div>
+                    <div class="progress">
+                        <div class="percentage" style="width:80%">
+                            <div class="percent">80%</div> 
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="name font-700">Python</div>
+                    <div class="progress">
+                        <div class="percentage" style="width:90%">
+                            <div class="percent">90%</div> 
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="name font-700">C++</div>
+                    <div class="progress">
+                        <div class="percentage" style="width:98%">
+                            <div class="percent">98%</div> 
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="name font-700">PHP</div>
+                    <div class="progress">
+                        <div class="percentage" style="width:50%">
+                            <div class="percent">50%</div> 
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="name font-700">Go</div>
+                    <div class="progress">
+                        <div class="percentage" style="width:20%">
+                            <div class="percent">20%</div> 
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="name font-700">Java</div>
+                    <div class="progress">
+                        <div class="percentage" style="width:10%">
+                            <div class="percent">10%</div> 
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="name font-700">C#</div>
+                    <div class="progress">
+                        <div class="percentage" style="width:10%">
+                            <div class="percent">10%</div> 
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="name font-700">VHDL</div>
+                    <div class="progress">
+                        <div class="percentage" style="width:40%">
+                            <div class="percent">40%</div> 
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="name font-700">MySQL</div>
+                    <div class="progress">
+                        <div class="percentage" style="width:98%">
+                            <div class="percent">98%</div> 
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="name font-700">Git</div>
+                    <div class="progress">
+                        <div class="percentage" style="width:98%">
+                            <div class="percent">98%</div> 
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="name font-700">Windows</div>
+                    <div class="progress">
+                        <div class="percentage" style="width:95%">
+                            <div class="percent">95%</div> 
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="name font-700">Linux</div>
+                    <div class="progress">
+                        <div class="percentage" style="width:95%">
+                            <div class="percent">95%</div> 
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="name font-700">Microsoft Word</div>
+                    <div class="progress">
+                        <div class="percentage" style="width:95%">
+                            <div class="percent">95%</div> 
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="name font-700">Microsoft Excel</div>
+                    <div class="progress">
+                        <div class="percentage" style="width:80%">
+                            <div class="percent">80%</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="name font-700">Adobe Photoshop</div>
+                    <div class="progress">
+                        <div class="percentage" style="width:85%">
+                            <div class="percent">85%</div> 
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="name font-700">Adobe Illustrator</div>
+                    <div class="progress">
+                        <div class="percentage" style="width:80%">
+                            <div class="percent">80%</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="name font-700">Corel Draw</div>
+                    <div class="progress">
+                        <div class="percentage" style="width:80%">
+                            <div class="percent">80%</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="name font-700">GIMP</div>
+                    <div class="progress">
+                        <div class="percentage" style="width:30%">
+                            <div class="percent">30%</div> 
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section" id="experience">
+        <h2>Experiência | Educação</h2>
+
+        <div class="content">
+            <div class="wrapper">
+                <span class="company">Havan</span>
+                <span class="time">Setembro 2018 – Outubro 2019</span>
+                <span class="role">Cargo: Suporte Técnico (HelpDesk)</span> 
+            </div>
+            <div class="wrapper">
+                <span class="company">Adsomos</span>
+                <span class="time">Fevereiro 2020 – Março 2020</span>
+                <span class="role">Cargo: Suporte Técnico</span> 
+            </div>
+            <div class="wrapper">
+                <span class="name">Universidade do Vale do Itajaí | Univali</span>
+                <span class="class">Bacharelado em Engenharia de computação</span>
+                <span class="time">2019</span>
             </div>
         </div>
         
-        <div class="section" id="about">
-            <h2>Sobre</h2>
-            <div class="content">
-                <p>
-                    Meu nome é Thales, mas pode me chamar de Japa ou Sato, o que for mais confortável. <br /> <br />
-                    Tenho 21 anos e me apaixonei por tecnologia na infância e sempre tive curiosidade de entender a fundo como tudo funciona, <br />
-                    esse foi um dos motivos de ingressar no bacharelado de engenharia de computação,
-                    infelizmente fui obrigado a pausar a graduação mas ainda é um objetivo em minha vida.<br /><br />
-                    Em meus cargos mais recentes trabalhei como suporte técnico, o que foi muito importante para obter a visão mais aguçada
-                    sobre o usuário e refinar meu raciocínio lógico tanto quanto aprender muito sobre todas as engrenagens de uma grande empresa.
-                    Como hobbie eu sempre estou ansioso para aprender novas coisas, então me aventuro em desenho, design gráfico, animação, VFX, stream e principalmente
-                    jogar competitivamente, apesar de não ser de alto nível heheh.
-                </p>
-            </div>
-        </div>
-        
-        <div class="section" id="competence">
-            <h2>Competencias</h2>
-            <ul>
-                <li> 
-                    <div class="name">HTML</div>
-                    <div class="percentage"></div>
-                </li>
-                <li> 
-                    <div class="name">CSS</div>
-                    <div class="percentage"></div>
-                </li>
-                <li> 
-                    <div class="name">JavaScript</div>
-                    <div class="percentage"></div>
-                </li>
-                <li> 
-                    <div class="name">Python</div>
-                    <div class="percentage"></div>
-                </li>
-                <li> 
-                    <div class="name">C++</div>
-                    <div class="percentage"></div>
-                </li>
-                <li> 
-                    <div class="name">PHP</div>
-                    <div class="percentage"></div>
-                </li>
-                <li> 
-                    <div class="name">Go</div>
-                    <div class="percentage"></div>
-                </li>
-                <li> 
-                    <div class="name">Java</div>
-                    <div class="percentage"></div>
-                </li>
-                <li> 
-                    <div class="name">C#</div>
-                    <div class="percentage"></div>
-                </li>
-                <li> 
-                    <div class="name">VHDL</div>
-                    <div class="percentage"></div>
-                </li>
-                <li> 
-                    <div class="name">MySQL</div>
-                    <div class="percentage"></div>
-                </li>
-                <li> 
-                    <div class="name">Git</div>
-                    <div class="percentage"></div>
-                </li>
-                <li> 
-                    <div class="name">Windows</div>
-                    <div class="percentage"></div>
-                </li>
-                <li> 
-                    <div class="name">Linux</div>
-                    <div class="percentage"></div>
-                </li>
-                <li> 
-                    <div class="name">Microsoft Word</div>
-                    <div class="percentage"></div>
-                </li>
-                <li> 
-                    <div class="name">Microsoft Excel</div>
-                    <div class="percentage"></div>
-                </li>
-                <li> 
-                    <div class="name">Microsoft PowerPoint</div>
-                    <div class="percentage"></div>
-                </li>
-                <li> 
-                    <div class="name">Adobe Photoshop</div>
-                    <div class="percentage"></div>
-                </li>
-                <li> 
-                    <div class="name">Adobe Illustrator</div>
-                    <div class="percentage"></div>
-                </li>
-                <li> 
-                    <div class="name">Corel Draw</div>
-                    <div class="percentage"></div>
-                </li>
-                <li> 
-                    <div class="name">GIMP</div>
-                    <div class="percentage"></div>
-                </li>
-            </ul>
-        </div>
 
-        <div class="section" id="experience">
-            <h2>Experiência</h2>
-            
-            Setembro 2018 – Outubro 2019 – Havan
-            Cargo: Suporte Técnico (HelpDesk)
-            Responsabilidade: Atender os funcionários internos provendo suporte a software (Zabbix,
-            Sistema PDV, Sistema ERP, Sistema SCM), hardware e dúvida referente a procedimentos.
-            
-            Fevereiro 2020 – Adsomos
-            Cargo: Suporte Técnico
-            Responsabilidade: Suporte aos clientes do software da empresa. Sistema PDV e Sistema ERP com
-            a utilização de banco de dados MySQL
-        </div>
+    </div>
 
-        <div class="section" id="education">
-            <h2>Educação</h2>
-            
-            Universidade do Vale do Itajaí | Univali
-            Bacharelado em Engenharia de computação
-            2019
-        </div>
+    
+    <div class="section" id="class">
+        <h2>Cursos</h2>
+    
+        Operador de computador/Designer gráfico (Bluehard Treinamentos de Informática - conclusão
+        em 2010);
+    
+        Aprendizagem industrial de programador de computador (SENAI/SC Brusque - conclusão em 2014);
+    
+        Aprendizagem industrial de desenhista de moda (SENAI/SC Brusque - conclusão em 2015);
+    
+        Web design (Barriga Verde - conclusão em 2013);
+    
+        Legislação trabalhista (SENAI/SC - Brusque - conclusão em 2015);
+    
+        Empreendedorismo (SENAI/SC Brusque - conclusão em 2014);
+    
+        Finanças pessoais (SENAI/SC Brusque - conclusão em 2015);
+    
+        Tecnologia da informação e da comunicação (SENAI/SC Brusque - conclusão em 2014);
+    
+        Propriedade intelectual (SENAI/SC Brusque - conclusão em 2015);
+    
+        Consumo consciente de energia (SENAI/SC Brusque - conclusão em 2015);
+    
+        Terminal Linux (Prof.Diego Mariano | Udemy - conclusão em 2019);
+    
+        Curso Web Moderno com JavaScript 2020 COMPLETO + Projetos (Cod3r | Udemy - conclusão em 2020);
+    
+        Introdução a Pintura Digital (Guilherme Gusmão de Freitas | Canal YT Brush Rush - conclusão em 2020);
+    
+        C++ Essencial: Aprenda a Programar PASSO a PASSO! [2020] (Cod3r | Udemy - em andamento);
         
-        <div class="section" id="class">
-            <h2>Cursos</h2>
+        Python 3 - Curso Completo do Básico ao Avançado (Cod3r | Udemy - em andamento);
+    
+        Curso React + Redux: Fundamentos e 2 Apps do Absoluto ZERO! (Cod3r | Udemy - em andamento);
         
-            Operador de computador/Designer gráfico (Bluehard Treinamentos de Informática - conclusão
-            em 2010);
+        PHP 7 Completo - Curso do Desenvolvedor Web 2021 + Projetos (Cod3r | Udemy - em andamento);
         
-            Aprendizagem industrial de programador de computador (SENAI/SC Brusque - conclusão em 2014);
+        React Native: Desenvolva APPs Nativas para Android e iOS (Cod3r | Udemy - em andamento);
+    
+        Entendendo TypeScript (Cod3r | Udemy - em andamento);
+    
+        C# COMPLETO Programação Orientada a Objetos + Projetos (Prof. Nelio Alves | Udemy - em andamento);
+    
+        Git e contribuições para projetos Open Source (Prof. Bruno Orlandi | Udemy - em andamento);
+    
+        CSS Grid: o sistema definitivo de layouts (Prof. Tárcio Zemel | Udemy - em andamento);
+    
+        Sass placeholders: o jeito certo (Prof. Tárcio Zemel | Udemy - em andamento);
         
-            Aprendizagem industrial de desenhista de moda (SENAI/SC Brusque - conclusão em 2015);
-        
-            Web design (Barriga Verde - conclusão em 2013);
-        
-            Legislação trabalhista (SENAI/SC - Brusque - conclusão em 2015);
-        
-            Empreendedorismo (SENAI/SC Brusque - conclusão em 2014);
-        
-            Finanças pessoais (SENAI/SC Brusque - conclusão em 2015);
-        
-            Tecnologia da informação e da comunicação (SENAI/SC Brusque - conclusão em 2014);
-        
-            Propriedade intelectual (SENAI/SC Brusque - conclusão em 2015);
-        
-            Consumo consciente de energia (SENAI/SC Brusque - conclusão em 2015);
-        
-            Terminal Linux (Prof.Diego Mariano | Udemy - conclusão em 2019);
-        
-            Curso Web Moderno com JavaScript 2020 COMPLETO + Projetos (Cod3r | Udemy - conclusão em 2020);
-        
-            Introdução a Pintura Digital (Guilherme Gusmão de Freitas | Canal YT Brush Rush - conclusão em 2020);
-        
-            C++ Essencial: Aprenda a Programar PASSO a PASSO! [2020] (Cod3r | Udemy - em andamento);
-            
-            Python 3 - Curso Completo do Básico ao Avançado (Cod3r | Udemy - em andamento);
-        
-            Curso React + Redux: Fundamentos e 2 Apps do Absoluto ZERO! (Cod3r | Udemy - em andamento);
-            
-            PHP 7 Completo - Curso do Desenvolvedor Web 2021 + Projetos (Cod3r | Udemy - em andamento);
-            
-            React Native: Desenvolva APPs Nativas para Android e iOS (Cod3r | Udemy - em andamento);
-        
-            Entendendo TypeScript (Cod3r | Udemy - em andamento);
-        
-            C# COMPLETO Programação Orientada a Objetos + Projetos (Prof. Nelio Alves | Udemy - em andamento);
-        
-            Git e contribuições para projetos Open Source (Prof. Bruno Orlandi | Udemy - em andamento);
-        
-            CSS Grid: o sistema definitivo de layouts (Prof. Tárcio Zemel | Udemy - em andamento);
-        
-            Sass placeholders: o jeito certo (Prof. Tárcio Zemel | Udemy - em andamento);
-            
-            CSS: um passo adiante (Prof. Tárcio Zemel | Udemy - em andamento);
-        
-            Criação de Apps Android e iOS com Flutter 2021-Crie 14 Apps (Daniel Ciolfi, Rodrigo Marques, Flutter - Brasil | Oficial | Udemy - em andamento);
-        
-            Formação Cientista de Dados com Python e R (Prof. Fernanado Amaral | Udemy - em andamento);
-        </div>
+        CSS: um passo adiante (Prof. Tárcio Zemel | Udemy - em andamento);
+    
+        Criação de Apps Android e iOS com Flutter 2021-Crie 14 Apps (Daniel Ciolfi, Rodrigo Marques, Flutter - Brasil | Oficial | Udemy - em andamento);
+    
+        Formação Cientista de Dados com Python e R (Prof. Fernanado Amaral | Udemy - em andamento);
+    </div>
 
-        <div class="section" id="languanges">
-            <h2>Idiomas</h2>
-            
-            Portugues
-            Ingles
-            Japonês
-        </div>
+    <div class="section" id="languanges">
+        <h2>Idiomas</h2>
+        
+        Portugues
+        Ingles
+        Japonês
+    </div>
 
-        <div class="section" id="hobbies">
-            <h2>Hobbies</h2>
-        
-            League of Legends
-            Elo: Ouro(jogo só aram ranked só final da season para pegar skin vitoriosa)
-        
-            Counter Strike Global Offensive
-            Patente: mais alta: Supremo (2016)
-            Atualmente: Aguia|Sheriff
-        
-            Valorant
-            Epi 1: Platina 3 
-            Atual Prata 3 Subindo
-        
-            Apex Legends
-            Rank: Platina
-        
-            Escape from tarkov
-        </div>
+    <div class="section" id="hobbies">
+        <h2>Hobbies</h2>
+    
+        League of Legends
+        Elo: Ouro(jogo só aram ranked só final da season para pegar skin vitoriosa)
+    
+        Counter Strike Global Offensive
+        Patente: mais alta: Supremo (2016)
+        Atualmente: Aguia|Sheriff
+    
+        Valorant
+        Epi 1: Platina 3 
+        Atual Prata 3 Subindo
+    
+        Apex Legends
+        Rank: Platina
+    
+        Escape from tarkov
+    </div>
 
-        <div class="section" id="interests">
-            <h2>Interesses</h2>
+    <div class="section" id="interests">
+        <h2>Interesses</h2>
+    
+        Stream
+        Livros
+        Música
+        Arte
+        Hacking
+        Cozinha
+        Economia
+    </div>
+    
+    <div class="section" id="contact">
+        <h2>Contato</h2>
+    
+        linkedin
+        twitter
+        instagram
+        github
+        twitch
+        servidor do discord
+        facebook
+        Email
         
-            Stream
-            Livros
-            Música
-            Arte
-            Hacking
-            Cozinha
-            Economia
-        </div>
-        
-        <div class="section" id="social">
-            <h2>Redes Sociais</h2>
-        
-            linkedin
-            twitter
-            instagram
-            github
-            twitch
-            servidor do discord
-            facebook
-            Email
-        </div>
-
-        <div class="section" id="contact">
-            <h2>Contato</h2>
-            
-            (insira bgl d email ak)
-        </div>
+        (insira bgl d email ak)
     </div>
 </body>
 </html>
