@@ -3,54 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="manifest" href="img/site.webmanifest">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/home.css">
     <link rel="stylesheet" href="style/about.css">
-    <link rel="stylesheet" href="style/menu-btn.css">
     <link rel="stylesheet" href="style/competence.css">
     <link rel="stylesheet" href="style/experience.css">
-
+    
+    <!-- Overlay Menu -->
+    <link rel="stylesheet" href="style/overlayMenu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    
     <title>Thales M. Sato</title>
 </head>
 <body>
-    <div id="menuToggle">
-        <input type="checkbox" />
-        <span></span>
-        <span></span>
-        <span></span>
-        <ul id="menu">
-            <a href="#about">
-                <li>Sobre</li>
-            </a>
-            <a href="#competence">
-                <li>Competencias</li>
-            </a>
-            <a href="#experience">
-                <li>Experiência</li>
-            </a>
-            <a href="#education">
-                <li>Educação</li>
-            </a>
-            <a href="#class">
-                <li>Cursos</li>
-            </a>
-            <a href="#languanges">
-                <li>Idiomas</li>
-            </a>
-            <a href="#hobbies">
-                <li>Hobbies</li>
-            </a>
-            <a href="#interests">
-                <li>Interesses</li>
-            </a>
-            <a href="#contact">
-                <li>Contato</li>
-            </a>
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+    <div class="menuWrapper">
+        <ul>
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#competence">Competências</a></li>
+        <li><a href="#experience">Experiência</a></li>
+        <li><a href="#contact">Contato</a></li>
         </ul>
     </div>
 
@@ -58,9 +40,6 @@
         <div>
             <h1>THALES M. SATO</h1>
             <p class="font-700">Desenvolvedor front-end</p>
-            <a href="#about">
-                <span class="font-700">↓</span>
-            </a>
         </div>
     </div>
     
@@ -75,8 +54,6 @@
                 Tenho 21 anos e me apaixonei por tecnologia na infância e sempre tive curiosidade de entender a fundo como tudo funciona, <br />
                 esse foi um dos motivos de ingressar no bacharelado de engenharia de computação,
                 infelizmente fui obrigado a pausar a graduação mas ainda é um objetivo em minha vida.<br /><br />
-                Em meus cargos mais recentes trabalhei como suporte técnico, o que foi muito importante para obter a visão mais aguçada
-                sobre o usuário e refinar meu raciocínio lógico tanto quanto aprender muito sobre todas as engrenagens de uma grande empresa.
                 Como hobbie eu sempre estou ansioso para aprender novas coisas, então me aventuro em desenho, design gráfico, animação, VFX, stream e principalmente
                 jogar competitivamente, apesar de não ser de alto nível heheh.
             </p>
@@ -86,291 +63,36 @@
     <div class="section" id="competence">
         <h2>Competencias</h2>
         <div class="content">
-            <ul>
-                <li> 
-                    <div class="name font-700">HTML</div>
-                    <div class="progress">
-                        <div class="percentage" style="width:90%">
-                            <div class="percent">90%</div> 
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="name font-700">CSS</div>
-                    <div class="progress">
-                        <div class="percentage" style="width:50%">
-                            <div class="percent">50%</div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="name font-700">JavaScript</div>
-                    <div class="progress">
-                        <div class="percentage" style="width:80%">
-                            <div class="percent">80%</div> 
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="name font-700">Python</div>
-                    <div class="progress">
-                        <div class="percentage" style="width:90%">
-                            <div class="percent">90%</div> 
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="name font-700">C++</div>
-                    <div class="progress">
-                        <div class="percentage" style="width:98%">
-                            <div class="percent">98%</div> 
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="name font-700">PHP</div>
-                    <div class="progress">
-                        <div class="percentage" style="width:50%">
-                            <div class="percent">50%</div> 
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="name font-700">Go</div>
-                    <div class="progress">
-                        <div class="percentage" style="width:20%">
-                            <div class="percent">20%</div> 
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="name font-700">Java</div>
-                    <div class="progress">
-                        <div class="percentage" style="width:10%">
-                            <div class="percent">10%</div> 
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="name font-700">C#</div>
-                    <div class="progress">
-                        <div class="percentage" style="width:10%">
-                            <div class="percent">10%</div> 
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="name font-700">VHDL</div>
-                    <div class="progress">
-                        <div class="percentage" style="width:40%">
-                            <div class="percent">40%</div> 
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="name font-700">MySQL</div>
-                    <div class="progress">
-                        <div class="percentage" style="width:98%">
-                            <div class="percent">98%</div> 
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="name font-700">Git</div>
-                    <div class="progress">
-                        <div class="percentage" style="width:98%">
-                            <div class="percent">98%</div> 
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="name font-700">Windows</div>
-                    <div class="progress">
-                        <div class="percentage" style="width:95%">
-                            <div class="percent">95%</div> 
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="name font-700">Linux</div>
-                    <div class="progress">
-                        <div class="percentage" style="width:95%">
-                            <div class="percent">95%</div> 
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="name font-700">Microsoft Word</div>
-                    <div class="progress">
-                        <div class="percentage" style="width:95%">
-                            <div class="percent">95%</div> 
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="name font-700">Microsoft Excel</div>
-                    <div class="progress">
-                        <div class="percentage" style="width:80%">
-                            <div class="percent">80%</div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="name font-700">Adobe Photoshop</div>
-                    <div class="progress">
-                        <div class="percentage" style="width:85%">
-                            <div class="percent">85%</div> 
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="name font-700">Adobe Illustrator</div>
-                    <div class="progress">
-                        <div class="percentage" style="width:80%">
-                            <div class="percent">80%</div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="name font-700">Corel Draw</div>
-                    <div class="progress">
-                        <div class="percentage" style="width:80%">
-                            <div class="percent">80%</div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="name font-700">GIMP</div>
-                    <div class="progress">
-                        <div class="percentage" style="width:30%">
-                            <div class="percent">30%</div> 
-                        </div>
-                    </div>
-                </li>
-            </ul>
+           
         </div>
     </div>
 
-    <div class="section" id="experience">
-        <h2>Experiência | Educação</h2>
-
-        <div class="content">
-            <div class="wrapper">
-                <span class="company">Havan</span>
-                <span class="time">Setembro 2018 – Outubro 2019</span>
-                <span class="role">Cargo: Suporte Técnico (HelpDesk)</span> 
-            </div>
-            <div class="wrapper">
-                <span class="company">Adsomos</span>
-                <span class="time">Fevereiro 2020 – Março 2020</span>
-                <span class="role">Cargo: Suporte Técnico</span> 
-            </div>
-            <div class="wrapper">
-                <span class="name">Universidade do Vale do Itajaí | Univali</span>
-                <span class="class">Bacharelado em Engenharia de computação</span>
-                <span class="time">2019</span>
+    <div class="section" id="exp">
+        <div class="" id="experience">
+            <h2>Experiência</h2>
+            <div class="content">
+                <div class="card">
+                    <span class="cardTitle">Havan</span>
+                    <span class="time">Setembro 2018 – Outubro 2019</span>
+                    <span class="role">Suporte Técnico (HelpDesk)</span> 
+                </div>
+                <div class="card">
+                    <span class="cardTitle">Adsomos</span>
+                    <span class="time">Fevereiro 2020 – Março 2020</span>
+                    <span class="role">Cargo: Suporte Técnico</span> 
+                </div>
             </div>
         </div>
-        
-
-    </div>
-
-    
-    <div class="section" id="class">
-        <h2>Cursos</h2>
-    
-        Operador de computador/Designer gráfico (Bluehard Treinamentos de Informática - conclusão
-        em 2010);
-    
-        Aprendizagem industrial de programador de computador (SENAI/SC Brusque - conclusão em 2014);
-    
-        Aprendizagem industrial de desenhista de moda (SENAI/SC Brusque - conclusão em 2015);
-    
-        Web design (Barriga Verde - conclusão em 2013);
-    
-        Legislação trabalhista (SENAI/SC - Brusque - conclusão em 2015);
-    
-        Empreendedorismo (SENAI/SC Brusque - conclusão em 2014);
-    
-        Finanças pessoais (SENAI/SC Brusque - conclusão em 2015);
-    
-        Tecnologia da informação e da comunicação (SENAI/SC Brusque - conclusão em 2014);
-    
-        Propriedade intelectual (SENAI/SC Brusque - conclusão em 2015);
-    
-        Consumo consciente de energia (SENAI/SC Brusque - conclusão em 2015);
-    
-        Terminal Linux (Prof.Diego Mariano | Udemy - conclusão em 2019);
-    
-        Curso Web Moderno com JavaScript 2020 COMPLETO + Projetos (Cod3r | Udemy - conclusão em 2020);
-    
-        Introdução a Pintura Digital (Guilherme Gusmão de Freitas | Canal YT Brush Rush - conclusão em 2020);
-    
-        C++ Essencial: Aprenda a Programar PASSO a PASSO! [2020] (Cod3r | Udemy - em andamento);
-        
-        Python 3 - Curso Completo do Básico ao Avançado (Cod3r | Udemy - em andamento);
-    
-        Curso React + Redux: Fundamentos e 2 Apps do Absoluto ZERO! (Cod3r | Udemy - em andamento);
-        
-        PHP 7 Completo - Curso do Desenvolvedor Web 2021 + Projetos (Cod3r | Udemy - em andamento);
-        
-        React Native: Desenvolva APPs Nativas para Android e iOS (Cod3r | Udemy - em andamento);
-    
-        Entendendo TypeScript (Cod3r | Udemy - em andamento);
-    
-        C# COMPLETO Programação Orientada a Objetos + Projetos (Prof. Nelio Alves | Udemy - em andamento);
-    
-        Git e contribuições para projetos Open Source (Prof. Bruno Orlandi | Udemy - em andamento);
-    
-        CSS Grid: o sistema definitivo de layouts (Prof. Tárcio Zemel | Udemy - em andamento);
-    
-        Sass placeholders: o jeito certo (Prof. Tárcio Zemel | Udemy - em andamento);
-        
-        CSS: um passo adiante (Prof. Tárcio Zemel | Udemy - em andamento);
-    
-        Criação de Apps Android e iOS com Flutter 2021-Crie 14 Apps (Daniel Ciolfi, Rodrigo Marques, Flutter - Brasil | Oficial | Udemy - em andamento);
-    
-        Formação Cientista de Dados com Python e R (Prof. Fernanado Amaral | Udemy - em andamento);
-    </div>
-
-    <div class="section" id="languanges">
-        <h2>Idiomas</h2>
-        
-        Portugues
-        Ingles
-        Japonês
-    </div>
-
-    <div class="section" id="hobbies">
-        <h2>Hobbies</h2>
-    
-        League of Legends
-        Elo: Ouro(jogo só aram ranked só final da season para pegar skin vitoriosa)
-    
-        Counter Strike Global Offensive
-        Patente: mais alta: Supremo (2016)
-        Atualmente: Aguia|Sheriff
-    
-        Valorant
-        Epi 1: Platina 3 
-        Atual Prata 3 Subindo
-    
-        Apex Legends
-        Rank: Platina
-    
-        Escape from tarkov
-    </div>
-
-    <div class="section" id="interests">
-        <h2>Interesses</h2>
-    
-        Stream
-        Livros
-        Música
-        Arte
-        Hacking
-        Cozinha
-        Economia
+        <div class="" id="education">
+            <h2>Educação</h2>
+            <div class="content">
+                <div class="card">
+                    <span class="cardTitle">Univali</span>
+                    <span class="class">Bacharelado em Engenharia de computação</span>
+                    <span class="time">2019</span>
+                </div>
+            </div>
+        </div>
     </div>
     
     <div class="section" id="contact">

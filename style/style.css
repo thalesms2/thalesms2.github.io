@@ -18,13 +18,14 @@ body {
 }
 
 h2 {
-    display: flex;
-    justify-content: center;
+    display:inline-block;
     text-transform: uppercase;
+    box-shadow: inset 0px 6px 0px #A200FF;
+    -webkit-box-shadow: inset 0px -6px 0px #A200FF;
 }
 
 .section {
-    width: 55vw;
+    width: 70vw;
     padding: 10px;
 }
 
@@ -36,13 +37,21 @@ h2 {
     margin-bottom: 40px;
 }
 
+#exp {
+    display: flex;
+    flex-direction: row;
+}
+
+#experience, #education {
+    width: 50%;
+}
 
 .font-700 {
     font-weight: 700;
 }
 
 body::-webkit-scrollbar {
-    width: 0.30rem;
+    width: 0.30rem; 
 }
   
 body::-webkit-scrollbar-track {
@@ -50,5 +59,5 @@ body::-webkit-scrollbar-track {
 }
   
 body::-webkit-scrollbar-thumb {
-    background: white;
+    background: #A200FF;
 }

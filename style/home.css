@@ -16,15 +16,6 @@ h1 + p {
     line-height: 0em;
 }
 
-#home span {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform:translateX(-50%);
-    font-size: 3rem;
-    font-family: "Montserrat", sans-serif;
-}
-
-#home a {
-    color: white;
+#home p {
+    color: #A200FF;
 }
