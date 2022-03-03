@@ -6,58 +6,54 @@
     padding: 0;
 }
 
-
+/* Faz os scrolls controlados */
+html {
+    scroll-snap-type: y mandatory;
+}
 body {
-    font-family: 'Ubuntu', sans-serif;
-    color: white;
-    background-color: black;
+    scroll-snap-type: y mandatory;
+}
+
+
+section {
+    scroll-snap-align: start;
+    height: 100vh;
+    padding-top: 100px;
+}
+
+.header {
     display: flex;
-    justify-items: center;
+    justify-content: space-around;
     align-items: center;
-    flex-direction: column;
+    position: fixed;
+    top: 0;
+    background-color: #808080;
+    color: white;
+    width: 100%;
+    height: 80px;
 }
 
-h2 {
-    display:inline-block;
-    text-transform: uppercase;
-    box-shadow: inset 0px 6px 0px #A200FF;
-    -webkit-box-shadow: inset 0px -6px 0px #A200FF;
+.about {
+    display: flex;
+    margin-left: 15vw;
+    margin-right: 15vw;
 }
 
-.section {
-    width: 70vw;
+.img_about {
+    border-radius: 100%;
+    width: 25vw;
+    height: 25vw;
+    background-image: url('../img/20190922_170138.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.about p {
+    font-size: 1.2rem;
     padding: 10px;
 }
 
-.content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-#exp {
-    display: flex;
-    flex-direction: row;
-}
-
-#experience, #education {
-    width: 50%;
-}
-
-.font-700 {
-    font-weight: 700;
-}
-
-body::-webkit-scrollbar {
-    width: 0.30rem; 
-}
-  
-body::-webkit-scrollbar-track {
-    background: #1e1e24;
-}
-  
-body::-webkit-scrollbar-thumb {
-    background: #A200FF;
+h2 {
+    text-align: center;    
 }
