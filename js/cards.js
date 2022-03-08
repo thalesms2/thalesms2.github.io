@@ -4,8 +4,8 @@ const content = [
     ["Calculadora", "Feito em React", "img/calculadora.png", "https://thalesms2-calculator-react.netlify.app/"],
     ["Forum Senai", "Projeto Mundo Senai", "img/mundosenai.png", "https://thalesms2-mundo-senai.herokuapp.com/"],
     ["Flappy Bird", "Somente Javascript", "img/flappy.png", "https://thalesms2.github.io/flappybirdJS/"],
-    ["Landing page", "HTML|CSS Puro", "img/ballerini.png", "https://thalesms2.github.io/landingPageRBallerini/"]
-    // ["Advocacia", "Landing Page", "img/jhemila.png", "#link"],
+    ["Landing page", "HTML|CSS Puro", "img/ballerini.png", "https://thalesms2.github.io/landingPageRBallerini/"],
+    ["Contador", "DevChallenge", "img/contador.png", "https://thalesms2.github.io/contador-DevChallenge/"]
     // ["Johanna Links", "Landing Page", "img/joh.png", "#link"]
 ]
 
