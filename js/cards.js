@@ -1,38 +1,36 @@
-const cards = document.querySelector('[cards]')
+import { content } from './data/card-data.js'
 
-const content = [
-    ["Calculadora", "Feito em React", "img/calculadora.png", "https://thalesms2-calculator-react.netlify.app/"],
-    ["Forum Senai", "Projeto Mundo Senai", "img/mundosenai.png", "https://thalesms2-mundo-senai.herokuapp.com/"],
-    ["Flappy Bird", "Somente Javascript", "img/flappy.png", "https://thalesms2.github.io/flappybirdJS/"],
-    ["Landing page", "HTML|CSS Puro", "img/ballerini.png", "https://thalesms2.github.io/landingPageRBallerini/"],
-    ["Contador", "DevChallenge", "img/contador.png", "https://thalesms2.github.io/contador-DevChallenge/"]
-    // ["Johanna Links", "Landing Page", "img/joh.png", "#link"]
-]
+const slider = document.getElementById('slider')
 
-content.forEach((card) => {
-    const link = document.createElement('a')
-    const div = document.createElement('div')
-    const divWrapper = document.createElement('div')
-    const divImg = document.createElement('div')
-    const spanTitle = document.createElement('span')
-    const spanDescription = document.createElement('span')
+content.forEach((content) => {
+    const card = document.createElement('div')
+    card.classList.add('card')
+    const img = document.createElement('div')
+    img.classList.add('img-wrapper')
+    const title = document.createElement('h3')
+    const description = document.createElement('p')
+    const buttons = document.createElement('div')
+    buttons.classList.add('btn-wrapper')
+    const demo = document.createElement('a')
+    const repo = document.createElement('a')
     
-    link.setAttribute('href', card[3])
-    link.setAttribute('target', "_blank")
-    div.classList.add('card')
-    divImg.classList.add('img-card')
-    divImg.style.backgroundImage = `url('../${card[2]}')`
-    spanTitle.classList.add('span-title')
-    spanDescription.classList.add('span-description')
-    spanTitle.innerHTML = card[0]
-    spanDescription.innerHTML = card[1]
+    img.style.backgroundImage = `url(./${content.img})`
+    title.innerText = content.title
+    description.innerText = content.description
+    demo.setAttribute('href', content.demo)
+    demo.setAttribute('target', "_blank")
+    demo.innerText = 'Demo'
+    repo.setAttribute('href', content.repo)
+    repo.setAttribute('target', "_blank")
+    repo.innerText = 'repo'
 
-    divWrapper.appendChild(divImg)
-    div.appendChild(divWrapper)
-    div.appendChild(spanTitle)
-    div.appendChild(spanDescription)
-    link.appendChild(div)
-    cards.appendChild(link)    
+    buttons.appendChild(demo)
+    buttons.appendChild(repo)
+    card.appendChild(img)
+    card.appendChild(title)
+    card.appendChild(description)
+    card.appendChild(buttons)
+    slider.appendChild(card)
 })
 
 
