@@ -34,13 +34,14 @@
     border-radius: 8px;
 }
 
+/* Scroll suave em ancoras */
 html {
     scroll-behavior: smooth;
 }
-
 :target {
     scroll-margin-top: 70px;
 }
+/* -- */
 
 body {
     background-color: var(--main-bg-color);
@@ -117,19 +118,17 @@ main {
     min-height: 100vh;
 }
 
-.about, .portfolio, .skills {
+.about, .portfolio {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1em;
-    margin-top: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .portfolio {
     background-color: var(--darker-bg-color);
-    padding-top: 1em;
-    padding-bottom: 1em;
 }
 
 h2 {
@@ -139,10 +138,6 @@ h2 {
 .about > span {
     color: var(--text-color-400);
     font-weight: 500;
-}
-
-.none {
-    display: none;
 }
 
 .img-about {
@@ -217,7 +212,7 @@ button:hover {
     background-color: hsl(0, 100%, 51%);
     padding: 0.4em 1.3em;
     border-radius: 0.15em;
-    box-shadow: inset 0 -0.1em hsl(0, 98%, 35%), 0 0.1em black;
+    box-shadow: inset 0 -0.1em hsl(0, 98%, 35%), 0 0.1em hsl(0, 0%, 15%);
     border: none;
     transition: all .25s linear;
     text-transform: uppercase;
